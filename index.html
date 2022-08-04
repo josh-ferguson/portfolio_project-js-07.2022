@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Josh Ferguson</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/1a5df98828.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Josh Ferguson.</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#aboutMe-anchor">About me</a></li>
+                <li><a href="#projects-anchor">Projects</a></li>
+                <li><a href="#contactMe-anchor">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="aboutMe">
+        <i id="aboutMe-anchor"></i>
+        <div id="img-about">
+            <div id="img-container">
+                <img src="./images/profile_pic.jpg" alt="Profile Picture">
+            </div>
+            <div id="aboutMe-conatainer">
+                <div id="aboutMe-desc">
+                    <h1>About Me</h1>
+                    <p>I recently graduated from
+                        University of Portsmouth with
+                        skills in <strong>web design</strong>, <strong>databases</strong>,
+                        and <strong>website usability</strong>. I’m now
+                        looking for a challenging role in
+                        website development that
+                        provides opportunity for wide
+                        range of experience and
+                        possibilities to progress. I am
+                        eager to gain further knowledge
+                        and skills in an established
+                        company within a fast-paced and
+                        exciting workplace.</p>
+                </div>
+                </div>
+        </div>
+        <div id="skills-container">
+            <div class="skills">
+                <p><i class="fa-brands fa-html5 fa-flip" style="--fa-animation-duration: 5s;"></i> HTML</p>
+                <p><i class="fa-brands fa-css3-alt fa-flip" style="--fa-animation-duration: 5s;"></i> CSS</p>
+                <p><i class="fa-brands fa-square-js fa-flip" style="--fa-animation-duration: 5s;"></i> JavaScript</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <i id="projects-anchor"></i>
+        <div class="container">
+            <h1>Projects</h1>
+        </div>
+        <div id="project-slider-container">
+            <!-- Fotomatic Card -->
+            <div id="Fotomatic" class="project-slider">
+                <div class="slider">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <img id="fotomaticImg" src="./images/Fotomatic.jpg" alt="Fotomatic">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <h3>Fotomatic</h3>
+                <p>Fotomatic is a photography website focusing on responsive design. This was done mostly using @media.</p>
+            </div>
+            <!-- Number Guesser card -->
+            <div id="numberGuesser" class="hidden">
+                <div class="slider">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <img id="numberGuesserImg" src="./images/numberGuesser.jpg" alt="Number Guesser">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <h3>Number Guesser</h3>
+                <p>This is a simple number guesser game to practice JavaScript. It allows the user to select a number between 1 and 10. The script will randomly assign a number as the target and generate a random number as the computer guess. The closest number to the target wins.</p>
+            </div>
+            <!-- Tea Cozy card -->
+            <div id="teaCozy" class="hidden">
+                <div class="slider">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <img id="teaCozyImg" src="./images/teaCozy.jpg" alt="Tea Cozy">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <h3>Tea Cozy</h3>
+                <p>Tea manufacturing company website to practice flexbox. This is a website for an imaginary company which was created for the purpose of practicing flexbox.</p>
+            </div>
+            <!-- Rent Lux card -->
+            <div id="rentLux" class="hidden">
+                <div class="slider">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <img id="rentLuxImg" src="./images/rentLux.jpg" alt="Rent Lux">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <h3>Rent Lux</h3>
+                <p>A business website to practice using flexbox with responsive design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactMe">
+        <i id="contactMe-anchor"></i>
+        <div class="contactContainer">
+            <h1>Contact Me</h1>
+            <form>
+                <input name="name" type="text" class="feedback-input" placeholder="Name" required/>   
+                <input name="email" type="email" class="feedback-input" placeholder="Email" required/>
+                <textarea name="text" class="feedback-input" placeholder="Comment" required></textarea>
+                <input type="submit" value="SUBMIT" onclick="clicked(event)"/>
+            </form>
+        </div>
+    </section>
+
+</body>
+<script src="./main.js"></script>
+
+</html>
